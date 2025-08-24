@@ -1,0 +1,93 @@
+/* CSS Variables */
+:root {
+  --primary-color: #ff6347;
+  --secondary-color: #f5f5f5;
+  --text-color: #333;
+  --border-color: #ddd;
+  --box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+/* Header and logo */
+header {
+  margin-bottom: 2rem;
+}
+
+header .logo {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Main content area */
+.container {
+  background-color: var(--secondary-color);
+  padding: 1.875rem;
+  border-radius: 0.625rem;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 31.25rem;
+}
+
+/* Text area for input */
+textarea {
+  width: 100%;
+  height: 9.375rem;
+  padding: 0.625rem;
+  border: 0.125rem solid var(--border-color);
+  border-radius: 0.3125rem;
+  resize: none;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* Generate button */
+.generate-btn {
+  margin-top: 1.25rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 1.1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.generate-btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header .logo {
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  .generate-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
