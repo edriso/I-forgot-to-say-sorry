@@ -44,17 +44,18 @@ header .logo {
   border-radius: 0.625rem;
   box-shadow: var(--box-shadow);
   width: 100%;
-  max-width: 31.25rem;
+  max-width: fit-content;
 }
 
 /* Text area for input */
 textarea {
-  width: 100%;
+  display: block;
+  min-width: 400px;
   height: 9.375rem;
   padding: 0.625rem;
   border: 0.125rem solid var(--border-color);
   border-radius: 0.3125rem;
-  resize: vertical;
+  resize: auto;
   font-size: 1rem;
   color: var(--text-color);
 }

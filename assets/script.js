@@ -21,7 +21,7 @@ generateBtn.addEventListener('click', async () => {
 
   generateBtn.disabled = false;
   generateBtn.style.display = 'inline-block';
-  textarea.style.resize = 'vertical';
+  textarea.style.resize = 'auto';
   textarea.focus();
 
   alert('Apology image generated and downloaded!');
