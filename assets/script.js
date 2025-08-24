@@ -2,6 +2,11 @@ const generateBtn = document.querySelector('.generate-btn');
 const textarea = document.querySelector('textarea');
 
 generateBtn.addEventListener('click', async () => {
+  if (textarea.value.trim() === '') {
+    alert('Please enter your apology first!');
+    return;
+  }
+
   generateBtn.disabled = true;
   generateBtn.focus();
   generateBtn.style.display = 'none';
