@@ -2,6 +2,8 @@ const generateBtn = document.querySelector('.generate-btn');
 const textarea = document.querySelector('textarea');
 
 generateBtn.addEventListener('click', async () => {
+  generateBtn.disabled = true;
+  generateBtn.focus();
   generateBtn.style.display = 'none';
   textarea.style.resize = 'none';
 
@@ -12,8 +14,10 @@ generateBtn.addEventListener('click', async () => {
   a.click();
   a.remove();
 
+  generateBtn.disabled = false;
   generateBtn.style.display = 'inline-block';
   textarea.style.resize = 'vertical';
+  textarea.focus();
 
   alert('Apology image generated and downloaded!');
 });
