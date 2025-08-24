@@ -1,9 +1,9 @@
 /* CSS Variables */
 :root {
-  --primary-color: #F5BABB;
-  --secondary-color: #FFF5F2;
-  --text-color: #064232;
-  --border-color: #568F87;
+  --primary-color: #456882;
+  --secondary-color: #F9F3EF;
+  --border-color: #D2C1B6;
+  --text-color: #1B3C53;
   --box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
