@@ -1,4 +1,4 @@
-# I Forgot to Say Sorry
+# I Forgot to Say Sorry 🙏
 
 A simple web app to create and download apology images.
 
