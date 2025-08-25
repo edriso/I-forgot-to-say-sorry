@@ -23,48 +23,46 @@ body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 /* Header and logo */
 header {
-  margin-bottom: 2rem;
-}
-
-header {
+  margin-bottom: 1.5rem;
   color: var(--primary-color);
-  font-size: 2rem;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 
 /* Main content area */
 .container {
   background-color: var(--secondary-color);
-  padding: 1.875rem;
+  padding: 1.5rem;
   border-radius: 0.625rem;
   box-shadow: var(--box-shadow);
   width: 100%;
   max-width: fit-content;
 }
 
-/* Text area for input */
+/* Text area for input - Mobile first */
 textarea {
   display: block;
-  min-width: 400px;
+  width: 100%;
+  min-width: 250px;
   height: 9.375rem;
   padding: 0.625rem;
   border: 0.125rem solid var(--border-color);
   border-radius: 0.3125rem;
   resize: auto;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--text-color);
 }
 
 /* Generate button */
 .generate-btn {
   margin-top: 1.25rem;
-  padding: 0.625rem 1.25rem;
-  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   background-color: var(--primary-color);
   color: white;
   border: none;
@@ -77,18 +75,42 @@ textarea {
     background-color: var(--primary-color);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* Small tablets and above */
+@media (min-width: 576px) {
   header {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Tablet and above (md screens and above) */
+@media (min-width: 768px) {
+  body {
+    padding: 1.25rem;
+  }
+
+  header {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    padding: 1.875rem;
   }
 
   textarea {
-    font-size: 0.9rem;
+    min-width: 400px;
+    font-size: 1rem;
   }
 
   .generate-btn {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    padding: 0.625rem 1.25rem;
+  }
+}
+
+/* Large screens and above */
+@media (min-width: 1024px) {
+  header {
+    font-size: 1.5rem;
   }
 }
