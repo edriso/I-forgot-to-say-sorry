@@ -88,17 +88,12 @@ textarea {
     padding: 1.25rem;
   }
 
-  header {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-  }
-
   .container {
     padding: 1.875rem;
   }
 
   textarea {
-    min-width: 400px;
+    min-width: 600px;
     font-size: 1rem;
   }
 
@@ -111,6 +106,6 @@ textarea {
 /* Large screens and above */
 @media (min-width: 1024px) {
   header {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
