@@ -49,11 +49,12 @@ textarea {
   display: block;
   width: 100%;
   min-width: 250px;
-  height: 9.375rem;
+  height: 150px;
+  min-height: 100px;
+  resize: auto;
   padding: 0.625rem;
   border: 0.125rem solid var(--border-color);
   border-radius: 0.3125rem;
-  resize: auto;
   font-size: 0.9rem;
   color: var(--text-color);
 }
