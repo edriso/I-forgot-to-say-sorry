@@ -1,10 +1,10 @@
-# I Forgot to Say Sorry 🙏
+# I forgot to say SORRY 🙏
 
 A simple web app to create and download apology images.
 
 ## Usage
 
-1. Open [I forgot to say sorry](https://edriso.github.io/I-forgot-to-say-sorry) in your browser
+1. Open [I forgot to say SORRY](https://edriso.github.io/I-forgot-to-say-sorry) in your browser
 2. Write your apology in the text area
 3. Click "Generate Apology Image"
 4. The image will download automatically
